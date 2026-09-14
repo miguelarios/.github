@@ -9,7 +9,7 @@ assignees: ''
 <!--
 Title format: feat: <what becomes possible>
 Describe the problem before the solution. If you cannot name who is blocked
-and why it matters, this is probably a Task, not a Feature.
+and why it matters, this is probably a Chore, not a Feature.
 -->
 
 ## Problem

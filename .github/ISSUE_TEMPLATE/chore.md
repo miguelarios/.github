@@ -1,8 +1,8 @@
 ---
-name: Task
+name: Chore
 about: Scoped work that is neither a bug nor a new capability (chore, refactor, infra)
 title: "chore: "
-labels: task
+labels: chore
 assignees: ''
 ---
 

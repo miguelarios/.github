@@ -13,7 +13,7 @@ not code, and nothing here is sensitive.
 | --- | --- |
 | `CONTRIBUTING.md` | Issue and PR routing table. The canonical source of conventions. |
 | `SECURITY.md` | Private vulnerability reporting. |
-| `.github/ISSUE_TEMPLATE/` | `bug`, `feature`, `task`, `docs` templates plus `config.yml`. |
+| `.github/ISSUE_TEMPLATE/` | `bug`, `feature`, `chore`, `docs` templates plus `config.yml`. |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Default PR template. |
 | `.github/PULL_REQUEST_TEMPLATE/` | Alternates: `deploy.md`, `hotfix.md`. Opt in with `?template=`. |
 | `agent-conventions.md` | Block to paste into each repo's `CLAUDE.md`. Not inherited by GitHub. |

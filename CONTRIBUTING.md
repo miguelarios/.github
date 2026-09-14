@@ -13,7 +13,7 @@ the listed evidence. An issue missing its required evidence will be sent back.
 | --- | --- | --- |
 | Something behaves incorrectly: crash, regression, wrong output | `bug.md` (`-T Bug`) | Expected vs actual, reproduction steps, logs or output, version/commit, OS and runtime, impact |
 | A capability that does not exist yet | `feature.md` (`-T Feature`) | Problem statement naming who is blocked, proposed approach, alternatives including do-nothing, scope, done-when checklist |
-| Chore, refactor, dependency bump, deploy, migration | `task.md` (`-T Task`) | Goal, acceptance criteria, risk and rollback |
+| Chore, refactor, dependency bump, deploy, migration | `chore.md` (`-T Chore`) | Goal, acceptance criteria, risk and rollback |
 | Docs missing, wrong, or contradicting the code | `docs.md` (`-T Docs`) | Exact file path or URL, expected content, actual content quoted |
 | Code is wrong *and* docs are wrong | `bug.md` | File the bug; fix docs in the same PR |
 | A question, a support request, or an idea with no concrete change behind it | Do not file an issue | Open a discussion or raise it in your working thread first |
@@ -28,8 +28,8 @@ the listed evidence. An issue missing its required evidence will be sent back.
     fix: uploads over 50MB fail silently when the disk cache is full
     feat: add a --dry-run flag to the sync command
 
-**Labels.** `bug`, `enhancement`, `documentation`, and `task`. The first three
-ship with every GitHub repo; `task` has to be created per repo.
+**Labels.** `bug`, `enhancement`, `documentation`, and `chore`. The first three
+ship with every GitHub repo; `chore` has to be created per repo.
 
 **Evidence beats assertion.** Every bug needs reproduction steps. Every PR needs
 the command that proves it works, with its real output. If something could not be

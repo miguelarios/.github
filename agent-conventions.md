@@ -25,8 +25,8 @@ Issues — pick the template by situation:
   version, OS. Label `bug`.
 - `-T Feature` — new capability. Requires a problem statement naming who is
   blocked, plus alternatives. Label `enhancement`.
-- `-T Task` — chore, refactor, bump, deploy. Requires acceptance criteria and
-  rollback. Label `task`.
+- `-T Chore` — chore, refactor, bump, deploy. Requires acceptance criteria and
+  rollback. Label `chore`.
 - `-T Docs` — docs wrong or missing. Requires exact path, expected vs actual.
   Label `documentation`.
 
