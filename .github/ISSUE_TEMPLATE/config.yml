@@ -1,0 +1,6 @@
+# Set to false to force everyone through a template.
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/miguelarios/.github/security/advisories/new
+    about: Do not open a public issue. Report privately instead.
