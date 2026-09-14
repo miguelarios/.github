@@ -2,7 +2,7 @@
 
 ## Service
 
-<!-- Which container/host. e.g. paperless-ngx on Edith -->
+<!-- Which service, and where it runs. -->
 
 ## Change
 
@@ -19,11 +19,13 @@
 
 ## Deploy steps
 
+<!-- Replace with this repo's actual deploy sequence. -->
+
 - [ ] Merge
-- [ ] `git pull` on the host
-- [ ] `docker compose up -d <service>`
-- [ ] Verify healthcheck and Traefik route
-- [ ] Confirm data/volumes intact
+- [ ] Pull the new revision on the target
+- [ ] Restart or recreate the service
+- [ ] Verify the healthcheck and that routing still resolves
+- [ ] Confirm persistent data and volumes are intact
 
 ## Rollback
 

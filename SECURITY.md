@@ -21,5 +21,5 @@ Reports without reproduction steps and demonstrated impact will be deprioritized
 
 ## Scope
 
-These are personal and homelab projects maintained by one person. There is no
-bounty program and no response-time guarantee, though I read reports promptly.
+These repositories are maintained by one person. There is no bounty program and
+no response-time guarantee, though I read reports promptly.

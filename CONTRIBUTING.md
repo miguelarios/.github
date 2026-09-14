@@ -16,7 +16,7 @@ the listed evidence. An issue missing its required evidence will be sent back.
 | Chore, refactor, dependency bump, deploy, migration | `task.md` (`-T Task`) | Goal, acceptance criteria, risk and rollback |
 | Docs missing, wrong, or contradicting the code | `docs.md` (`-T Docs`) | Exact file path or URL, expected content, actual content quoted |
 | Code is wrong *and* docs are wrong | `bug.md` | File the bug; fix docs in the same PR |
-| A question, or an idea not yet worth tracking | Do not file an issue | Ask in chat instead |
+| A question, a support request, or an idea with no concrete change behind it | Do not file an issue | Open a discussion or raise it in your working thread first |
 | Security vulnerability | Private advisory, never a public issue | See `SECURITY.md` |
 | Opening a PR | `pull_request_template.md` | Visible `Closes #<issue>`, problem, what changed, verification output, risk and rollback |
 
@@ -25,8 +25,8 @@ the listed evidence. An issue missing its required evidence will be sent back.
 **Titles** use Conventional Commit prefixes: `feat`, `fix`, `refactor`, `chore`,
 `docs`, `build`. Describe the user-visible effect, not the implementation.
 
-    fix: transcribe-cli drops the last chunk when input is under 3s
-    feat: add Parakeet MLX as a local provider
+    fix: uploads over 50MB fail silently when the disk cache is full
+    feat: add a --dry-run flag to the sync command
 
 **Labels.** `bug`, `enhancement`, `documentation`, and `task`. The first three
 ship with every GitHub repo; `task` has to be created per repo.
@@ -57,7 +57,7 @@ gh issue create -T Bug --title "fix: ..." --label bug
 gh pr create -T pull_request_template.md --title "fix: ..." --fill-verbose
 
 # Opt into an alternate PR template
-gh pr create -T deploy.md --title "chore: bump paperless-ngx to 2.14.0"
+gh pr create -T deploy.md --title "chore: bump the search service to 2.14.0"
 ```
 
 Note that `gh` reads markdown templates only. YAML issue forms are invisible to

@@ -3,7 +3,7 @@ Title format: type: user-facing description
 Types: feat, fix, refactor, chore, docs, build.
 Add a parenthesized scope only when it adds clarity.
 
-  Good:  fix(traefik): dashboard 404s when the router rule has no host match
+  Good:  fix(auth): session cookie is dropped when the request is proxied
   Bad:   fix: update middleware config
 
 For fixes, describe the visible symptom and its trigger, not the code change.

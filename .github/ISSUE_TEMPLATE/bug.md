@@ -8,7 +8,7 @@ assignees: ''
 
 <!--
 Title format: fix: <user-visible symptom> when <trigger>
-Good:  fix: transcribe-cli drops the last chunk when input is under 3s
+Good:  fix: the last audio chunk is dropped when input is under 3s
 Bad:   fix: add null check in chunker
 
 Fill every section below. Delete the comments, not the headings.
