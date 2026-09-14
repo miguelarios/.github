@@ -37,7 +37,7 @@ gh issue create -T Bug --title "fix: <symptom> when <trigger>" --label bug
 PRs — always use the template and always link the issue:
 
 ```bash
-gh pr create -T pull_request_template.md --title "fix: <user-visible description>"
+gh pr create -T PULL_REQUEST_TEMPLATE.md --title "fix: <user-visible description>"
 ```
 
 Alternate PR templates: `-T deploy.md` for container/image deploys,

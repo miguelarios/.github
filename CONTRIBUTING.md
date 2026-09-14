@@ -18,7 +18,7 @@ the listed evidence. An issue missing its required evidence will be sent back.
 | Code is wrong *and* docs are wrong | `bug.md` | File the bug; fix docs in the same PR |
 | A question, a support request, or an idea with no concrete change behind it | Do not file an issue | Open a discussion or raise it in your working thread first |
 | Security vulnerability | Private advisory, never a public issue | See `SECURITY.md` |
-| Opening a PR | `pull_request_template.md` | Visible `Closes #<issue>`, problem, what changed, verification output, risk and rollback |
+| Opening a PR | `PULL_REQUEST_TEMPLATE.md` | Visible `Closes #<issue>`, problem, what changed, verification output, risk and rollback |
 
 ## Conventions
 
@@ -54,7 +54,7 @@ gh api graphql -f query='{ repository(owner:"miguelarios", name:"REPO") {
 gh issue create -T Bug --title "fix: ..." --label bug
 
 # Open a PR against the default template
-gh pr create -T pull_request_template.md --title "fix: ..." --fill-verbose
+gh pr create -T PULL_REQUEST_TEMPLATE.md --title "fix: ..." --fill-verbose
 
 # Opt into an alternate PR template
 gh pr create -T deploy.md --title "chore: bump the search service to 2.14.0"
@@ -62,3 +62,7 @@ gh pr create -T deploy.md --title "chore: bump the search service to 2.14.0"
 
 Note that `gh` reads markdown templates only. YAML issue forms are invisible to
 the API, which is why the templates here are `.md`.
+Template filenames are case-sensitive and differ per repo: a repo with its own
+`pull_request_template.md` shadows the inherited `PULL_REQUEST_TEMPLATE.md`.
+Always confirm with the GraphQL query above before passing `-T`.
+
