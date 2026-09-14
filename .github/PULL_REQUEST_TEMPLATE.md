@@ -8,13 +8,13 @@ Add a parenthesized scope only when it adds clarity.
 
 For fixes, describe the visible symptom and its trigger, not the code change.
 
-Link the issue with a visible line below (not inside a comment):
-  Closes #123      - merging this resolves the issue
-  Related: #123    - connected, but does not close it
-
 Other templates in this repo, opt in by appending to the compare URL:
   ?template=deploy.md   - container/image deploys
   ?template=hotfix.md   - production incident fixes
+
+Template names are case-sensitive and vary per repo. Confirm before using -T:
+  gh api graphql -f query='{ repository(owner:"OWNER", name:"REPO") {
+    pullRequestTemplates { filename } } }'
 -->
 
 ## What problem this solves
@@ -25,11 +25,22 @@ workflow, not the code-level cause.
 For fixes: "Fixes: <what goes wrong> when <trigger>."
 -->
 
+## Bug fixes only
+
+<!-- Delete this whole section if this is not a bug fix. -->
+
+- **Current behaviour:**
+- **Expected behaviour:**
+- **Reproduction:**
+
+<!-- Say what the root cause turned out to be, not just the symptom. -->
+
 ## What changed
 
 <!--
 The shipped solution, briefly. Leave file-by-file walkthroughs to the diff.
-Include technical detail only where it explains behavior or a real tradeoff.
+Include the decisions a reviewer would otherwise reverse-engineer: why this
+approach, what was rejected, what a future reader would trip over.
 -->
 
 ## How it was verified
@@ -49,6 +60,24 @@ the screenshot. Note anything you could NOT verify.
 Blast radius, migrations, config changes, and the exact command to revert.
 Write "Low: additive only, no migration" if that is genuinely the case.
 Do not hide risks or required manual steps in a <details> block.
+-->
+
+## Release
+
+<!--
+Version bumps and changelog entries, or "no release".
+
+Check this repo's own conventions before filling this in — what a release
+means, and what merging triggers, differs per repo. Where merging a version
+bump publishes automatically, "no release" is a claim worth stating rather
+than an absence a reviewer has to interpret.
+-->
+
+## Related
+
+<!--
+`Closes #N` for each issue this finishes, one per line.
+Reference without closing for partial work. Delete if nothing is related.
 -->
 
 ## Checklist

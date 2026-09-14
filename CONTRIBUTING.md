@@ -18,7 +18,7 @@ the listed evidence. An issue missing its required evidence will be sent back.
 | Code is wrong *and* docs are wrong | `bug.md` | File the bug; fix docs in the same PR |
 | A question, a support request, or an idea with no concrete change behind it | Do not file an issue | Open a discussion or raise it in your working thread first |
 | Security vulnerability | Private advisory, never a public issue | See `SECURITY.md` |
-| Opening a PR | `PULL_REQUEST_TEMPLATE.md` | Visible `Closes #<issue>`, problem, what changed, verification output, risk and rollback |
+| Opening a PR | `PULL_REQUEST_TEMPLATE.md` | Visible `Closes #<issue>`, problem, what changed, verification output, risk and rollback, release impact |
 
 ## Conventions
 
