@@ -48,6 +48,9 @@ Rules that apply to every issue and PR here:
 - Titles use Conventional Commit prefixes: `feat`, `fix`, `refactor`, `chore`,
   `docs`, `build`. Describe the user-visible effect, not the implementation.
 - PRs carry a visible `Closes #<issue>` line.
+- Every issue goes in a milestone (`--milestone "v<major>.<minor> <Theme>"`).
+  Milestones are the roadmap; do not add a `ROADMAP.md`. File work as issues
+  before building it.
 - The verification section holds the real command and its real output. Never
   write "tested locally" or claim a passing test without pasting it. State
   explicitly what you could not verify.

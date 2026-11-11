@@ -38,6 +38,31 @@ verified, say which part and why. Do not claim a test passed without pasting it.
 **Never commit secrets.** Redact tokens, API keys, and internal hostnames from
 logs, screenshots, and config before pasting them anywhere.
 
+## Roadmap and milestones
+
+The roadmap for a repo is its GitHub milestones. Do not keep a `ROADMAP.md` or
+a phase list in a design doc; point to the milestones instead.
+
+- **One milestone per release**, titled `v<major>.<minor> <Theme>`, for example
+  `v1.1 Search and navigation`. The description is one sentence saying what is
+  true when it ships.
+- **Every issue belongs to a milestone.** An issue with none is unscheduled on
+  purpose; say why in the issue.
+- **Extract before building.** When a plan, review or conversation produces
+  work, file it as issues in milestones first, then build from the issues.
+- **Decisions go in the issue.** When the owner settles an open question, edit
+  the issue body so it stays the single source, and note the date.
+- **Work in another repo** gets its own issue in that repo, linked both ways.
+- **Close the milestone** when its release is tagged. Move unfinished issues to
+  the next milestone rather than leaving them behind.
+
+```bash
+gh api repos/OWNER/REPO/milestones -f title="v1.1 Search and navigation" \
+  -f description="Finding a message is fast."
+gh issue create -T Feature --title "feat: ..." --label enhancement \
+  --milestone "v1.1 Search and navigation"
+```
+
 ## Filing from the command line
 
 Templates resolve through the GitHub API, so these work in any repo owned by this
